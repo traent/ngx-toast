@@ -1,0 +1,11 @@
+/* As suggested in
+ * https://github.com/angular-eslint/angular-eslint#eslint-configs-and-performance
+ */
+{
+  "extends": "./tsconfig.lib.json",
+  "include": [
+    "src/**/*.ts",
+    "e2e/**/*.ts"
+  ],
+  "exclude": []
+}
