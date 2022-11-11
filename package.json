@@ -1,0 +1,21 @@
+{
+  "name": "@traent/ngx-toast",
+  "version": "0.0.4",
+  "author": {
+    "name": "Traent S.r.l."
+  },
+  "license": "Apache License 2.0",
+  "scripts": {
+    "doc:common": "compodoc -p ./tsconfig.doc.json --hideGenerator --name '@traent/ngx-toast'",
+    "doc:generate": "npm run doc:lib:common",
+    "doc:serve": "npm run doc:lib:common -- --serve"
+  },
+  "peerDependencies": {
+    "@angular/common": "^14.1.2",
+    "@angular/core": "^14.1.2",
+    "@angular/material": "^14.1.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}
