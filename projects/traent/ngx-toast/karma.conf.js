@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, '../../coverage/ngx-t3-toast'),
+      dir: require('path').join(__dirname, '../../../coverage/traent/ngx-toast'),
       subdir: '.',
       reporters: [
         { type: 'html' },
