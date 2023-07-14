@@ -3,8 +3,8 @@ import { ComponentPortal } from '@angular/cdk/portal';
 import { Injectable, Injector } from '@angular/core';
 import { first } from 'rxjs';
 
-import { NgxT3ToastComponent } from './ngx-t3-toast.component';
-import { ToastRef, ToastParams, ToastData, TOAST_DATA } from './ngx-t3-toast.model';
+import { NgxT3ToastComponent } from './ngx-toast.component';
+import { ToastRef, ToastParams, ToastData, TOAST_DATA } from './ngx-toast.model';
 
 const defaultToastData = {
   type: 'info',

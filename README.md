@@ -40,7 +40,13 @@ class AppModule {}
 
 ## API & Examples
 
-Coming Soon.
+The example app can be launched using `npm run serve:example`.
+
+Please note that the `example-app` depends from `@traent/design-system` and in particular from its `fonts.scss`, `material/theme` and `mat-toast` configurations and styles.
+
+In it, you can find a simple usage of `NgxT3ToastService` that is used to instantiate customizable toasts.
+
+The available default `ToastTypes` are `info`, `error`, `warning`, `success`, but we can customize the toast further by using the `message` or `show` methods.
 
 ## Building & Publishing
 

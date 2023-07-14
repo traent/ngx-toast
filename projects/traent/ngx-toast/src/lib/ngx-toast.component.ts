@@ -1,7 +1,7 @@
 import { trigger, transition, style, animate } from '@angular/animations';
 import { Component, Inject } from '@angular/core';
 
-import { ToastData, ToastRef, TOAST_DATA } from './ngx-t3-toast.model';
+import { ToastData, ToastRef, TOAST_DATA } from './ngx-toast.model';
 
 @Component({
   selector: 'ngx-t3-toast',
@@ -19,7 +19,7 @@ import { ToastData, ToastRef, TOAST_DATA } from './ngx-t3-toast.model';
         </div>
         <div
           *ngIf="data.title"
-          class="opal-h5">{{ data.title }}</div>
+          class="tw-h5">{{ data.title }}</div>
         <button
           mat-icon-button
           class="toast-close"
@@ -32,13 +32,15 @@ import { ToastData, ToastRef, TOAST_DATA } from './ngx-t3-toast.model';
         *ngIf="listOfMessage; else message"
         class="toast-content">
         <ul>
-          <li *ngFor="let message of listOfMessage">
-            {{ message }}
+          <li
+            *ngFor="let message of listOfMessage"
+            class="tw-break-all">
+              {{ message }}
           </li>
         </ul>
       </div>
       <ng-template #message>
-        <div class="toast-content">{{ data.message }}</div>
+        <div class="toast-content tw-break-all">{{ data.message }}</div>
       </ng-template>
     </div>
   `,

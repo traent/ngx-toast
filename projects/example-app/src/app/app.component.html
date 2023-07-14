@@ -1,0 +1,40 @@
+<span class="tw-ml-5 tw-font-bold">Toast Methods:</span>
+
+<div class="container tw-mt-2">
+  <div
+    class="content tw-bg-red-500 tw-cursor-pointer"
+    (click)="showToast('error')">
+    error
+  </div>
+
+  <div
+    class="content tw-bg-orange-600 tw-cursor-pointer"
+    (click)="showToast('warning')">
+    warning
+  </div>
+
+  <div
+    class="content tw-bg-green-500 tw-cursor-pointer"
+    (click)="showToast('success')">
+    success
+  </div>
+
+  <div
+    class="content tw-bg-accent-500 tw-cursor-pointer"
+    (click)="showToast('message', { duration: 5000, icon: 'close' })">
+    message
+  </div>
+
+  <div
+    class="content tw-cursor-pointer"
+    (click)="showToast('show', {
+      type: 'info',
+      title: 'Show',
+      message: 'The most customizable one.',
+      icon: 'cloud',
+      duration: 10000,
+      iconType: 'material'
+    })">
+    show
+  </div>
+</div>
